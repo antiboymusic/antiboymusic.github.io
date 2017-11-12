@@ -47,10 +47,10 @@ $( document ).ready(function() {
          getaudio.play()
        }
      } else if ($('.speaker').hasClass("speakerplay")) {
-       getaudio.pause();
+       // getaudio.pause();
        $('.speaker').removeClass('speakerplay');
-       window.clearTimeout(mouseovertimer);
-       audiostatus = 'on';
+       // window.clearTimeout(mouseovertimer);
+       // audiostatus = 'on';
      }
    });
 
