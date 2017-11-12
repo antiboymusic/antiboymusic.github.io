@@ -1,6 +1,9 @@
 <html>
 <head>
   <meta charset="UTF-8">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
   <style media="screen">
 
     @font-face {
@@ -22,11 +25,13 @@
       background-size: cover;
     }
     .japanese-text {
+      font-weight: 900;
       position: absolute;
       left: 50%;
+      width: 100%;
       transform: translateX(-50%) translateY(8%);
-      font-size: 30px;
-      -webkit-animation: flicker2 4s infinite;
+      font-size: 40px;
+      opacity: 0;
     }
     .text-container {
       position: absolute;
@@ -39,44 +44,17 @@
       text-align: center;
       width: 90%;
     }
-    @-webkit-keyframes flicker2
-    {
-      0% {opacity:1;}
-      9% {opacity:0;}
-      10% {opacity:0;}
-      19% {opacity:1;}
-      20% {opacity:0;}
-      25% {opacity:0;}
-      40% {opacity: 1;}
-      41% {opacity: 0;}
-      100% {opacity: 0;}
-    }
-    @-webkit-keyframes flicker
-    {
-      0% {opacity:0;}
-      9% {opacity:0;}
-      10% {opacity:1;}
-      13% {opacity:0;}
-      20% {opacity:1;}
-      25% {opacity:1;}
-      40% {opacity: 0;}
-      41% {opacity: 1;}
-      100% {opacity: 1;}
-    }
     .text {
       margin-bottom: 6%;
       font-size: 40px;
     }
     .zeroes{
       font-size: 20px;
-      -webkit-animation: flicker 4s infinite;
     }
     .title {
       margin-bottom: 6%;
       font-family:  "Futura-Heavy";
       font-size: 40px;
-
-      -webkit-animation: flicker 4s infinite;
     }
     @media only screen and (max-width: 768px) {
       /* For mobile phones: */
@@ -97,7 +75,6 @@
     </div>
     <div class="zeroes">
       01010111 01101000 01100001 01110100 00100000 01101001 01110011 00100000 01100001 01101110 01110100 01101001 01100010 01101111 01111001 00111111
-
   </div>
 </body>
 </html>
