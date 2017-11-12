@@ -26,7 +26,7 @@ $( document ).ready(function() {
     off();
     setTimeout(function(){
       on();
-    }, 20+Math.random()*100)
+    }, 80+Math.random()*100)
   }
 
   (function loop() {
