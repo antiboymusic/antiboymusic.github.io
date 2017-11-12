@@ -19,6 +19,7 @@
       src: url('FuturaLT-Heavy.ttf')  format('truetype'); /* Safari, Android, iOS */
     }
     body  {
+      background-image: url("bg.gif");
       font-family: 'Futura', "Trebuchet MS", Arial, sans-serif;
       background-repeat:no-repeat;
       background-position: 0% 19%;
@@ -26,10 +27,8 @@
     }
     .japanese-text {
       font-weight: 900;
-      position: absolute;
-      left: 50%;
+      margin-bottom: 4%;
       width: 100%;
-      transform: translateX(-50%) translateY(8%);
       font-size: 40px;
       opacity: 0;
     }
@@ -44,8 +43,15 @@
       text-align: center;
       width: 90%;
     }
+    .static {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 10;
+    }
+
     .text {
-      margin-bottom: 6%;
+      margin-bottom: 4%;
       font-size: 40px;
     }
     .zeroes{
@@ -54,29 +60,31 @@
       margin: 0 auto;
     }
     .title {
-      margin-bottom: 6%;
+      margin-bottom: 4%;
       font-family:  "Futura-Heavy";
       font-size: 40px;
     }
     @media only screen and (max-width: 768px) {
       /* For mobile phones: */
       body {
-        background-position:center;
+        background-position:center!important;
+        background-size: cover;
+        background-position: 49% 1%;
       }
   }
   </style>
 </head>
-<body background="bg.jpg">
+<body>
   <audio loop autoplay>
     <source src="signal.mp3" type="audio/mp3">
   </audio>
   <div class="text-container">
 
-    <div class="japanese-text">
-      アンチボーイとは何ですか？
-    </div>
     <div class="title">
       WHAT IS ANTIBOY?
+    </div>
+    <div class="japanese-text">
+      アンチボーイとは何ですか？
     </div>
     <div class="zeroes">
       01010111 01101000 01100001 01110100 00100000 01101001 01110011 00100000 01100001 01101110 01110100 01101001 01100010 01101111 01111001 00111111
