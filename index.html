@@ -1,17 +1,58 @@
 <html>
-<style media="screen">
-  body  {
-    background-repeat:no-repeat;
-    background-position: 0% 19%;
-    background-size: cover;
-  }
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    body {
-      background-position:center;
+<head>
+  <meta charset="UTF-8">
+  <style media="screen">
+    body  {
+      background-repeat:no-repeat;
+      background-position: 0% 19%;
+      background-size: cover;
     }
-}
-</style>
+    .text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      text-align: middle;
+      color: white;
+      font-size: 30px;
+      font-family: Helvetica;
+      font-weight: bold;
+      text-align: center;
+      width: 90%;
+      -webkit-animation: flicker 2s infinite;
+    }
+    @-webkit-keyframes flicker
+    {
+      0% {opacity:0;}
+      9% {opacity:0;}
+      10% {opacity:.5;}
+      13% {opacity:0;}
+      20% {opacity:.5;}
+      25% {opacity:1;}
+    }
+    .text {
+      margin-bottom: 6%;
+
+    }
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      body {
+        background-position:center;
+      }
+  }
+  </style>
+</head>
 <body background="bg.jpg">
+  <div class="text-container">
+    <div class="text">
+      WHAT IS ANTIBOY?
+    </div>
+    <div class="text">
+      アンチボーイとは何ですか？
+    </div>
+    <div class="text">
+      01010111 01101000 01100001 01110100 00100000 01101001 01110011 00100000 01100001 01101110 01110100 01101001 01100010 01101111 01111001 00111111
+
+  </div>
 </body>
 </html>
