@@ -2,7 +2,14 @@ $( document ).ready(function() {
   var zeroes = $('.zeroes')
   var title = $('.title')
   var japanese = $('.japanese-text')
+
+  var getaudio = $('#player')[0];
   setInterval(function(){
+
+    if ($(window).width() < 500) {
+      $('#player').attr('autoplay', false )
+      $('#player').attr('loop', false )
+    }
     var str = "";
     for (var i = 0; i< 160; i++) {
       str = str+ Math.round(Math.random()).toString();
@@ -23,6 +30,7 @@ $( document ).ready(function() {
   }
 
   function textFlicker() {
+
     off();
     setTimeout(function(){
       on();
@@ -30,12 +38,12 @@ $( document ).ready(function() {
   }
 
   (function loop() {
+
       var rand = Math.round(Math.random()*3000);
       setTimeout(function() {
               textFlicker();
               loop();
       }, rand);
   }());
-
 
 });

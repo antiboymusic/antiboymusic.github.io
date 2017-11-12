@@ -1,6 +1,6 @@
 
 $( document ).ready(function() {
- var getaudio = $('#player')[0];
+   var getaudio = $('#player')[0];
    /* Get the audio from the player (using the player's ID), the [0] is necessary */
    var mouseovertimer;
    /* Global variable for a timer. When the mouse is hovered over the speaker it will start playing after hovering for 1 second, if less than 1 second it won't play (incase you accidentally hover over the speaker) */
